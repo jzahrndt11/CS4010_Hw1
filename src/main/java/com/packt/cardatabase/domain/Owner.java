@@ -27,6 +27,8 @@ public class Owner {
 
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "owner")
 	private List<Car> cars;
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = "owner")
+	private List<Pet> pets;
 
 	public List<Car> getCars() {
 		return cars;
@@ -34,6 +36,14 @@ public class Owner {
 
 	public void setCars(List<Car> cars) {
 		this.cars = cars;
+	}
+
+	public List<Pet> getPets() {
+		return pets;
+	}
+
+	public void setPets(List<Pet> pets) {
+		this.pets = pets;
 	}
 
 	public Long getOwnerid() {
