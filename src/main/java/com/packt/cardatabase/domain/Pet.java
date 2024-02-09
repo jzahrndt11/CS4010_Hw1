@@ -1,3 +1,9 @@
+/*
+    Jeremy Zahrndt - Hw1
+    2/7/2024
+
+    Pet Class: Class to hold detail about pet and has a many to one relationship with owner
+ */
 package com.packt.cardatabase.domain;
 
 import jakarta.persistence.Entity;
