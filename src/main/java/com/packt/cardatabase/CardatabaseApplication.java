@@ -73,6 +73,7 @@ public class CardatabaseApplication implements CommandLineRunner {
 			logger.info("brand: {}, model: {}", car.getBrand(), car.getModel());
 		}
 
+		// Fetch all pets and log to console
 		for (Pet pet : prepository.findAll()) {
 			logger.info("name: {}, species: {}, dob: {}", pet.getName(), pet.getSpecies(), pet.getDob());
 		}
